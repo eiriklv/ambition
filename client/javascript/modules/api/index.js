@@ -2,7 +2,7 @@ var request = require('superagent');
 
 exports = module.exports = function(config) {
     return {
-        resource: require('./resource')(request, config.api.url + '/resource'),
+        todos: require('./todos')(request, config.api.url + '/todos'),
         comments: require('./comments')(request, config.api.url + '/comments')
     };
 };

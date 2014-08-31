@@ -2,7 +2,7 @@
 var fs = require('fs');
 var url = require('url');
 var colors = require('colors');
-var debug = require('debug')('express-basic-app:setup');
+var debug = require('debug')('ambition:setup');
 
 // express dependencies
 var morgan = require('morgan');

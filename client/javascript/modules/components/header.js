@@ -8,10 +8,6 @@ var ReactAsync = require('react-async');
 module.exports = React.createClass({
     displayName: 'Header',
 
-    getInitialState: function() {
-        return this.props.user;
-    },
-
     componentWillReceiveProps: function(nextProps) {
         console.log('updating header');
     },
@@ -32,22 +28,13 @@ module.exports = React.createClass({
                             <span className='icon-bar'></span>
                             <span className='icon-bar'></span>
                         </button>
-                        <a className='navbar-brand' href='#'>Home</a>
+                        <a className='navbar-brand' href='#'>Ambition</a>
                     </div>
 
                     <div className='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
 
-                        <ul className='nav navbar-nav'>
-                            <li><a href='/'>Landing</a></li>
-                            <li className='active'><a href='/home'>React Demo App</a></li>
-
-                            <li className='dropdown'>
-                                <a href='#' className='dropdown-toggle' data-toggle='dropdown'>Logged in: {this.state.name} <span className='caret'></span></a>
-                                <ul className='dropdown-menu' role='menu'>
-                                    <li><a href='#'>Token: {this.state.token}</a></li>
-                                </ul>
-                            </li>
-
+                        <ul className='nav navbar-nav pull-right'>
+                            <li><a href='/logout'>Log out</a></li>
                         </ul>
                     </div>
                 </div>

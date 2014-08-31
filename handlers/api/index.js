@@ -1,6 +1,6 @@
 exports = module.exports = function(services) {
     return {
-        resource: require('./resource')(services.resource),
+        todo: require('./todo')(services.todos),
         comments: require('./comments')(services.comments)
     };
 };

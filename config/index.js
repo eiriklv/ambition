@@ -6,7 +6,7 @@ function _throw(m) {
 // dependencies
 var util = require('util');
 var convict = require('convict');
-var debug = require('debug')('express-basic-app:configuration');
+var debug = require('debug')('ambition:configuration');
 var validator = require('validator');
 
 // catch all errors with no handler
@@ -45,6 +45,11 @@ var config = module.exports = convict({
             },
             default: 'somesillysecret',
             env: 'APPSECRET'
+        },
+        token: {
+            doc: 'The login token.',
+            default: 'test1234',
+            env: 'SERVER_TOKEN'
         }
     },
     client: {

@@ -1,6 +1,6 @@
 exports = module.exports = function(models, helpers) {
     return {
-        resource: require('./resource')(models.Resource, helpers),
+        todos: require('./todo')(models.Todo, helpers),
         comments: require('./comment')(models.Comment, helpers)
     };
 };

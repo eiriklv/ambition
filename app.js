@@ -35,7 +35,7 @@ var ipc = require('./modules/ipc')(0);
 var models = require('./models')(mongoose);
 var services = require('./services')(models, helpers);
 var middleware = require('./middleware')();
-var handlers = require('./handlers')(services, helpers);
+var handlers = require('./handlers')(services, helpers, config);
 
 // initialize routes
 require('./routes')(app, express, middleware, handlers, config);

@@ -6,14 +6,12 @@ var React = require('react');
 
 var SetIntervalMixin = require('../mixins/set-interval');
 
+var moment = require('moment')
+
 module.exports = React.createClass({
-    displayName: 'Time',
+    displayName: 'CountDown',
 
     mixins: [SetIntervalMixin],
-
-    getInitialState: function() {
-        return {time: new Date(this.props.startTime)};
-    },
 
     componentDidMount: function() {
         this.setInterval(this.tick, 1000); // Call a method on the mixin
@@ -26,7 +24,7 @@ module.exports = React.createClass({
     render: function() {
         return (
             <div className='well'>
-                The time is {this.state.time.toTimeString()}
+                {moment().format('MMMM Do YYYY, h:mm:ss a')}
             </div>
         );
     }
