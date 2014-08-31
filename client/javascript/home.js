@@ -90,6 +90,13 @@ var App = React.createClass({
                             skin='danger'
                             placeholder='What are your motivations?'
                         />
+                        <TodoApp
+                            api={api}
+                            type='self'
+                            title='SELF DEVELOPMENT'
+                            skin='warning'
+                            placeholder='Quotes, thoughts and musings'
+                        />
                     </div>
                 </body>
             </html>
