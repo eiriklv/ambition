@@ -52,6 +52,16 @@ module.exports = React.createClass({
         }.bind(this));
     },
 
+    handleStatus: function(action, id) {
+        this.props.api.todos.update({
+            id: id,
+            action: action
+        }, function(err, result) {
+            if (err) return console.log(err);
+            this.updateList();
+        }.bind(this));
+    },
+
     handleDelete: function() {
         this.props.api.todos.remove({
             type: this.props.type
@@ -63,13 +73,12 @@ module.exports = React.createClass({
 
     handleComplete: function(childProps) {
         var id = childProps.key;
+        this.handleStatus('complete', id);
+    },
 
-        this.props.api.todos.update({
-            id: id
-        }, function(err, result) {
-            if (err) return console.log(err);
-            this.updateList();
-        }.bind(this));
+    handleStar: function(childProps) {
+        var id = childProps.key;
+        this.handleStatus('star', id);
     },
 
     render: function() {
@@ -97,6 +106,7 @@ module.exports = React.createClass({
                 <TodoList
                     items={this.state.items}
                     handleComplete={this.handleComplete}
+                    handleStar={this.handleStar}
                 />
             </div>
         );

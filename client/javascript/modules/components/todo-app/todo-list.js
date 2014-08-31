@@ -15,9 +15,11 @@ module.exports = React.createClass({
             return (
                 <TodoItem
                     handleComplete={this.props.handleComplete}
+                    handleStar={this.props.handleStar}
                     key={item._id}
                     text={item.text}
                     complete={item.complete}
+                    star={item.star}
                 />
             );
         }.bind(this);

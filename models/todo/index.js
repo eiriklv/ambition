@@ -9,6 +9,10 @@ exports = module.exports = function(collection, mongoose) {
             type: Boolean,
             default: false
         },
+        star: {
+            type: Boolean,
+            default: false
+        },
         text: {
             type: String,
             required: true
