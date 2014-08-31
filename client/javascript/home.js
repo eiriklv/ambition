@@ -97,6 +97,13 @@ var App = React.createClass({
                             skin='warning'
                             placeholder='Quotes, thoughts and musings'
                         />
+                        <TodoApp
+                            api={api}
+                            type='misc'
+                            title='MISCELLANEOUS'
+                            skin='info'
+                            placeholder='Save some misc stuff..'
+                        />
                     </div>
                 </body>
             </html>
