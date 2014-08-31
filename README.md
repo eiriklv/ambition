@@ -4,7 +4,7 @@ Ambition
 #### Introduction:
 Another todo-app
 
-![express basic application](http://s29.postimg.org/osrdfy24n/preview.png "Express Basic Application")
+![ambition](http://s1.postimg.org/wb60y4m7j/star_000000_512.png "Ambition")
 
 #### Built with:
 * [node.js](http://www.nodejs.org/)
