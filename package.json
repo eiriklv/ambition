@@ -1,11 +1,11 @@
 {
-  "name": "express-basic-app",
+  "name": "ambition",
   "main": "app.js",
   "engines": {
     "node": "0.10.x"
   },
   "version": "0.1.0",
-  "description": "Express Basic Application",
+  "description": "Ambition todo-app",
   "dependencies": {
     "express": "~4.4.3",
     "morgan": "~1.1.1",

@@ -1,10 +1,8 @@
-Express Basic Application
-=========================
+Ambition
+========
 
 #### Introduction:
-This project will give you a scaffolding/boilerplate of the [node](http://www.nodejs.org/)/[express](http://www.expressjs.com/) stack. It uses [mongodb](http://www.mongodb.org/) for database models and [redis](http://www.redis.io/) for session storage. Fork at will! :)
-
-##### Edit: This branch introduces a demo application with react
+Another todo-app
 
 ![express basic application](http://s29.postimg.org/osrdfy24n/preview.png "Express Basic Application")
 
@@ -77,7 +75,7 @@ export NODE_ENV="production" \
 export APPSECRET="somecrazyhash" \
 export CLIENT_API_PATH="/api" \
 export SESSION_KEY="express.sid" \
-export MONGO_URL="mongodb://localhost/express-basic-app" \
+export MONGO_URL="mongodb://localhost/ambition" \
 export REDIS_URL="redis://localhost:6379" \
 
 gulp
